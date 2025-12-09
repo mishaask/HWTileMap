@@ -1,28 +1,14 @@
-# Unity week 5: Two-dimensional scene-building and path-finding
+# Weekly HomeWork implemented on top of "Unity week 5: Two-dimensional scene-building and path-finding"
 
-A project with step-by-step scenes illustrating how to construct a 2D scene using tilemaps,
-and how to do path-finding using the BFS algorithm.
+This solution implements:
+2 enemy states/behaviours
+-When enemy loses sight of the player he will go to the last know location of the player, wait for a couple of seconds and then go back to his patrol.
+-After chasing the player for a specified(in a serialised field) ammount of time the enemy will get tired and stop chasing the player
 
-Text explanations are available 
-[here](https://github.com/gamedev-at-ariel/gamedev-5782) in folder 07.
+Using Dijkstra instead of BFS for weighted paths.
 
-## Cloning
-To clone the project, you may need to install git lfs first:
+TestDijksta folder with tests for the Dijkstra algorithm in the Vscode.
 
-    git lfs install 
+New scripts were added to accomidate the new enemy behaviour and they are located in HW directory in the Scripts directory
 
-
-## Credits
-
-Graphics:
-* [Ultima 4 Graphics](https://github.com/jahshuwaa/u4graphics) by Joshua Steele.
-
-Online course:
-* [Unity 2D](https://www.udemy.com/course/unitycourse/learn/lecture/10246496), a Udemy course by Gamedev.tv.
-* [Unity RPG](https://www.gamedev.tv/p/unity-rpg/?product_id=1503859&coupon_code=JOINUS).
-
-Procedural generation:
-* [Habrador - Unity Programming Patterns](https://github.com/Habrador/Unity-Programming-Patterns#7-double-buffer)
-
-Programming:
-* Erel Segal-Halevi
+itch.io: https://mishaaskk.itch.io/tilemapgame
